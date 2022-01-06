@@ -1,0 +1,10 @@
+import React from 'react'
+import "./competences.scss"
+
+export default function Competences() {
+    return (
+        <div className='competences'>
+            
+        </div>
+    )
+}
