@@ -3,7 +3,7 @@ import "./profil.scss"
 
 export default function Profil() {
     return (
-        <div className='profil'>
+        <div className='profil' id='profil'>
             dds
         </div>
     )
