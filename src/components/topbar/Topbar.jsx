@@ -2,9 +2,9 @@ import React from 'react';
 import "./topbar.scss";
 import {Person, Mail} from "@material-ui/icons"
 
-export default function Topbar() {
+export default function Topbar({menuOpen, setMenuOpen}) { // props du composant
     return (
-        <div className='topbar'>
+        <div className={"topbar " + (menuOpen && " active")}> {/*concatenation pour dire que la className sera topBar active quand les props soit menuOpen*/}
             <div className="wrapper">
                 <div className="left">
                     <a href='#profil' className='logo'>Eduardo.dev</a>
@@ -18,7 +18,7 @@ export default function Topbar() {
                     </div>
                 </div> 
                 <div className="right">
-                    <div className="hamburger">
+                    <div className="hamburger" onClick={()=>setMenuOpen(!menuOpen)} >
                         <span className='line1'></span>
                         <span className='line2'></span>
                         <span className='line3'></span>

@@ -52,13 +52,40 @@
                 justify-content: space-between;
                 cursor: pointer;
                 
-
                 span{
                     width: 100%;
                     height: 3px;
                     background-color: $mainColor;
+                    transform-origin: left;
+                    transition: all 2s ease; // tous les transitions (opacity et trasnform rotate seron efectues dans 2 seconds)
                 }
             }
         }
     }
+
+    &.active{
+        background-color: $mainColor;
+        color:white;
+
+        .hamburger{
+            span{
+                &:first-child{ // premier enfant, className line1
+                    background-color: white;
+                    transform: rotate(45deg);
+                }
+                &:nth-child(2){ //selecteur especifique
+                    opacity: 0; // quand notre tobar soit active en verra plus cette ligne
+
+                } 
+                &:last-child{ // dernier enfant, ClassName line3
+                    background-color: white;
+                    transform: rotate(-45deg);
+                }
+    
+            }
+        }
+    }
+
+   
+
 }
