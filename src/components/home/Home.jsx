@@ -21,7 +21,7 @@ export default function Home() {
     <div className="home" id="home">
       <div className="left">
         <div className="imgContainer">
-          <img src="/assets/Image2.png" alt="photo eduardo" />
+          <img src="/assets/Image2.png" alt="Eduardo Perez" />
         </div>
       </div>
       <div className="right">
