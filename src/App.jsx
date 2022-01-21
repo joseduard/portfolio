@@ -13,12 +13,13 @@ function App() {
   // useState permet d'ajouter l'etat local React à des fonctions composants
   // la variable s'appelle menuOpen et va initialisar en false, pour modifier la valeur de nemuOpen on va appeler setCount
   const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <div className="app">
       <Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       {/*Voici les props du composant */}
       <div className="sections">
-        <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
+        <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
         <Home />
         <Profil />
         <Realisations />

@@ -1,3 +1,5 @@
+@import "../../global.scss";
+
 .c{
     height: 100vh;
     position: relative;
@@ -6,7 +8,8 @@
 .c-bg{
     width: 20px;
     height: 100%;
-    background-color:crimson;
+   background-color: $mainColor;
+    
     position: absolute;
 }
 
@@ -45,6 +48,18 @@ flex:1;
 
 }
 
+.linkedin{
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+}
+
+.linkedin:hover{
+    
+        font-weight: 500;
+
+}
+
 .c-desc{
     font-weight: 200;
 }
@@ -72,7 +87,12 @@ textarea{
 button{
     border: none;
     padding: 15px;
-    background-color: green;
+    background-color: #78e08f;
     color: white;
     cursor: pointer;
+}
+
+button:hover{
+    color: black;
+    background-color: #60a3bc;
 }

@@ -21,7 +21,7 @@ export default function Realisations() {
     },
     {
       id: "javaScript",
-      title: "javaScript",
+      title: "JavaScript",
     },
     {
       id: "React",
@@ -60,17 +60,19 @@ export default function Realisations() {
       <div className="container">
         {data.map((d) => (
           <div className="item">
-           <img src={d.img} alt="" />
-           <a href={d.url} target="_blanc"><h3>{d.title}</h3></a>
+            <img src={d.img} alt="" />
+            <a href={d.url} target="_blanc">
+              <h3>{d.title}</h3>
+            </a>
             <p>{d.info}</p>
             <span>{d.techno}</span>
-          
+            <a href={d.url} target="_blanc">
+              {" "}
+              <span className="enlace"> {d.enlace}</span>{" "}
+            </a>
           </div>
-          
         ))}
-        
       </div>
-      
     </div>
   );
 }

@@ -7,10 +7,11 @@ export default function Home() {
   const textRef = useRef();
 
   useEffect(() => {
-    init(textRef.current, {  //{/*ici on utilise ityped grace au useEffect et useRef, dan ce partie on customise ityped"*/}
+    init(textRef.current, {
+      //{/*ici on utilise ityped grace au useEffect et useRef, dan ce partie on customise ityped"*/}
       showCursor: true,
-      backDelay:1500,
-      backSpeed:60,
+      backDelay: 1500,
+      backSpeed: 60,
       strings: ["JavaScript", "React.js", "Node,js", "Full Stack"],
     });
     {
@@ -26,7 +27,7 @@ export default function Home() {
       </div>
       <div className="right">
         <div className="wrapper">
-          <h2>Hola et bienvenu, Je suis </h2>
+          <h2>Hola et bienvenue, je suis </h2>
           <h1>Eduardo Perez </h1>
           <h3>
             Développeur web <span ref={textRef}></span>{" "}
