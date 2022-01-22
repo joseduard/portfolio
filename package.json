@@ -1,5 +1,6 @@
 {
   "name": "portfolio",
+  "homepage": "http://eduardo-web.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
