@@ -1,1 +1,11 @@
-$mainColor: #0a3d62
+$mainColor: #0a3d62;
+
+$width:768px;
+
+// une façon diferent d'utilisation de media queries globalement. il faudra importer le fichier global dans les composants
+@mixin mobile {
+    @media(max-width: #{$width}){
+        @content
+    }
+    
+}
