@@ -1,50 +1,54 @@
 @import "../../global.scss";
 
-.home{
+.home {
     background-color: white;
     display: flex;
 
-    @include mobile{
+    @include mobile {
         flex-direction: column;
         align-items: center;
     }
 
-    .left{
-        flex:0.5;
+    .left {
+        flex: 0.5;
         overflow: hidden;
-    
 
-        .imgContainer{
+        .imgContainer {
             width: 700px;
             height: 700px;
-            background-color:#60a3bc;
+            background-color: #60a3bc;
             border-radius: 5% 30% 50% 70%;
-            display:flex;
-            align-items:baseline;
+            display: flex;
+            align-items: baseline;
             justify-content: center;
             float: right;
             overflow: hidden;
 
-            @include mobile{
-                width: 350px;
-                height: 350px;
+            @include mobile {
+                width: 350px; //500px
+                height: 350px; //500px
                 align-items: flex-start;
-              }
+            }
 
-            img{
+            @include desktop {
+                width: 500px; //500px
+                height: 500px; //500px
+                align-items: flex-start;
+            }
+
+            img {
                 width: 90%;
-                @include mobile{
+                @include mobile {
                     width: 70%;
-                  }
+                }
             }
         }
     }
-    .right{
+    .right {
         flex: 0.5;
         position: relative;
-    
 
-        .wrapper{
+        .wrapper {
             width: 100%;
             height: 100%;
             padding-left: 50px;
@@ -52,72 +56,71 @@
             flex-direction: column;
             justify-content: center;
 
-            @include mobile{
+            @include mobile {
                 padding-left: 0;
                 align-items: center;
-              }
+            }
 
-            h1{
+            h1 {
                 font-size: 60px;
                 margin: 10px 0;
 
-                @include mobile{
+                @include mobile {
                     font-size: 40px;
-                  }
+                }
             }
 
-            h2{
+            h2 {
                 font-size: 35px;
-                @include mobile{
+                @include mobile {
                     font-size: 27px;
-                  }
+                }
             }
 
-            h3{
+            h3 {
                 font-size: 30px;
-                @include mobile{
+                @include mobile {
                     font-size: 23px;
-                  }
-                span{
+                }
+                span {
                     font-size: inherit;
-                    color:#78e08f;
+                    color: #78e08f;
                 }
 
-                .ityped-cursor{
+                .ityped-cursor {
                     animation: blink 1s infinite;
                 }
 
                 @keyframes blink {
-                    50%{
+                    50% {
                         opacity: 1;
                     }
-                    100%{
+                    100% {
                         opacity: 0;
                     }
                 }
             }
         }
 
-        a{
+        a {
             position: absolute;
             bottom: 25px;
-            left:40% ;
+            left: 40%;
 
-            @include mobile{
+            @include mobile {
                 position: absolute;
                 bottom: 0px;
-              }
+            }
 
-            img{
+            img {
                 width: 50px;
                 animation: arrowBlink 2s infinite;
                 font-weight: bold;
             }
 
-            @keyframes arrowBlink{
-                100%{
-                   opacity: 0; 
-
+            @keyframes arrowBlink {
+                100% {
+                    opacity: 0;
                 }
             }
         }

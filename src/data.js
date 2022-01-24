@@ -21,7 +21,7 @@ export const jsRealisations = [
     id: 3,
     title: "Makanban",
     img: "/assets/api.png",
-    info: "Makanban est une méthode agile kanban... Makanban !!! Interface de programmation conçue pour envoyer des données sous forme de JSON qui seront interprétées et utilisées dans une application front. API utile pour organiser des projets, des tâches et bien plus encore... de manière fluide et efficace.",
+    info: "Makanban est une méthode agile kanban!!! Interface de programmation conçue pour envoyer des données sous forme de JSON qui seront interprétées et utilisées dans une application front, API utile pour organiser des projets, des tâches et bien plus encore...",
     techno: "Node JS, Express, Postgresql, Sequelize, Json",
     url: "https://github.com/joseduard/Makanban",
     enlace: "Cliquez ici pour aller sur github !!",

@@ -1,11 +1,20 @@
 $mainColor: #0a3d62;
 
 $width:768px;
+$tablet-width: 769px;
+$desktop-width: 1366px; //1280
 
 // une façon diferent d'utilisation de media queries globalement. il faudra importer le fichier global dans les composants
 @mixin mobile {
     @media(max-width: #{$width}){
-        @content
+        @content;
     }
     
 }
+
+@mixin desktop {
+    @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+      @content;
+    }
+  }
+  

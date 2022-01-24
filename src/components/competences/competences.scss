@@ -1,33 +1,31 @@
 @import "../../global.scss";
-.competences{
+.competences {
     background-color: #60a3bc;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
 
-    .arrow{
-       height: 50px;
-       position: absolute;
-       cursor: pointer;
+    .arrow {
+        height: 50px;
+        position: absolute;
+        cursor: pointer;
 
-       @include mobile {
-        display: none;
-      }
-  
-       
-        &.left{
+        @include mobile {
+            display: none;
+        }
+
+        &.left {
             left: 100px;
             transform: rotate(180deg);
         }
 
-        &.right{
+        &.right {
             right: 100px;
         }
     }
 
-
-    .slider{
+    .slider {
         height: 350px;
         display: flex;
         position: absolute;
@@ -38,17 +36,17 @@
             height: 100vh;
             flex-direction: column;
             justify-content: center;
-          }
-        .container{
+        }
+        .container {
             width: 100vw;
             display: flex;
             align-items: center;
             justify-content: center;
 
-            .item{
+            .item {
                 width: 700px;
                 height: 100%;
-                background-color: white ;
+                background-color: white;
                 border-radius: 20px;
                 display: flex;
                 align-items: center;
@@ -58,25 +56,23 @@
                     width: 80%;
                     height: 150px;
                     margin: 15px 0;
-                  }
+                }
 
-                .left{
-                    flex:4;
+                .left {
+                    flex: 4;
                     height: 80%;
                     display: flex;
                     align-items: center;
                     justify-content: center;
 
-                    .leftContainer{
+                    .leftContainer {
                         width: 90%;
                         height: 90%;
                         display: flex;
                         flex-direction: column;
                         justify-content: space-between;
 
-                    
-
-                        .imgContainer{
+                        .imgContainer {
                             width: 40px;
                             height: 40px;
                             border-radius: 50%;
@@ -87,57 +83,53 @@
                             @include mobile {
                                 width: 20px;
                                 height: 20px;
-                              }
-                
+                            }
 
-                            img{
+                            img {
                                 width: 30px;
                                 border-radius: 50%;
 
                                 @include mobile {
                                     width: 15px;
-                                  }
+                                }
                             }
                         }
 
-                        h2{
+                        h2 {
                             font-size: 33px;
 
-                            @include mobile{
+                            @include mobile {
                                 font-size: 13px;
-                              }
+                            }
                         }
-                        p{
+                        p {
                             font-size: 20px;
                             font-weight: 500;
                             word-spacing: 3.4px;
-                            @include mobile{
+                            @include mobile {
                                 font-size: 10px;
-                              }
+                            }
                         }
-                        span{
+                        span {
                             font-size: 12px;
                             font-weight: 600;
-
                         }
                     }
-                    
                 }
-                .right{
-                    flex:8;
+                .right {
+                    flex: 8;
                     height: 100%;
                     display: flex;
                     align-items: center;
                     justify-content: center;
                     overflow: hidden;
-                    img{
+                    img {
                         width: 400px;
-                        transform:rotate(-10deg) ;
+                        transform: rotate(-10deg);
                         font-weight: bold;
                     }
                 }
             }
         }
     }
-    
 }
