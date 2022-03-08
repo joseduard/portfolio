@@ -22,7 +22,7 @@ $desktop-width: 1540px; //1280
 // }
 
 @mixin tablet {
-  @media(min-width: #{$mobile}) and (max-width: #{$tablet - 1px}){
+  @media(min-width: #{$mobile}) and (max-width: #{$tablet }){
       @content;
   }
   

@@ -17,7 +17,9 @@
     @include mobile {
         width: 200px;
     }
-
+    @include tablet {
+        width: 240px;
+    }
     &.active {
         right: 0;
     }
