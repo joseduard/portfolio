@@ -1,7 +1,8 @@
-@import "../../global.scss";
+ @import "../../global.scss";
 
 .realisations {
   background-color: white;
+  background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -9,7 +10,7 @@
   h1 {
     font-size: 50px;
 
-    @include mobile {
+    @include tablet {
       font-size: 20px;
     }
   }
@@ -20,24 +21,13 @@
     list-style: none;
     display: flex;
 
-    @include mobile {
+    @include tablet {
       margin: 10px 0;
       flex-wrap: wrap;
       justify-content: center;
     }
 
-    // li{
-    //     font-size: 14px;
-    //     margin-right: 50px;
-    //     padding: 7px;
-    //     border-radius:10px ;
-    //     cursor: pointer;
-
-    //     &.active{
-    //         background-color:$mainColor;
-    //         color: white;
-    //     }
-    // }
+   
   }
 
   .container {
@@ -48,7 +38,7 @@
     justify-content: center;
     flex-wrap: wrap;
 
-    @include mobile {
+    @include tablet {
       width: 100%;
       margin-top: 1rem;
     }
@@ -71,7 +61,7 @@
       position: relative;
       transition: all 0.5s ease;
 
-      @include mobile {
+      @include tablet {
         width: 200px;
         height: 130px;
         padding: 0px;
@@ -93,7 +83,7 @@
           font-size: 25px;
           transition: all 0.5s ease;
 
-          @include mobile {
+          @include tablet {
             font-size: 12px;
             text-align: center;
             position: absolute;
@@ -156,7 +146,7 @@
         top: 50px;
         font-size: 15px;
         padding: 10px;
-        @include mobile {
+        @include tablet {
           font-size: 8.5px;
           position: absolute;
           top: 18px;
@@ -175,7 +165,7 @@
         font-weight: 900;
         margin-left: 10px;
 
-        @include mobile {
+        @include tablet {
           padding: 0;
           font-size: 7px;
           position: absolute;
@@ -195,7 +185,7 @@
         font-weight: 900;
         padding: 0px 10px 0px 10px;
 
-        @include mobile {
+        @include tablet {
           font-size: 9px;
           visibility: hidden;
         }

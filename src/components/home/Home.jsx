@@ -3,7 +3,7 @@ import "./home.scss";
 import { init } from "ityped";
 
 export default function Home() {
-  // Hook useRef fonction ou faite la focntion de un querySelecteur pour choisir un element
+  // Hook useRef fonction ou faite la fonction de un querySelecteur pour choisir un element
   const textRef = useRef();
 
   useEffect(() => {
@@ -12,19 +12,40 @@ export default function Home() {
       showCursor: true,
       backDelay: 1500,
       backSpeed: 60,
-      strings: ["JavaScript", "React.js", "Node,js", "Full Stack"],
+      strings: ["JavaScript", "React.js", "Redux", "Node.js", "Sass", "SQL"],
     });
-    {
+    
       /*morceau du code pour utiliser ityped - npm */
-    }
+    
   }, []);
   return (
     <div className="home" id="home">
-      <div className="left">
+      <span className="animation"></span>
+      <span className="animation"></span>
+      <span className="animation"></span>
+      <span className="animation"></span>
+      <span className="animation"></span>
+      <span className="animation"></span>
+      <span className="animation"></span>
+      <span className="animation"></span>
+      <span className="animation"></span>
+      <span className="animation"></span>
+      <span className="animation"></span>
+      <span className="animation"></span>
+      <span className="animation"></span>
+      <span className="animation"></span>
+      <span className="animation"></span>
+      <span className="animation"></span>
+      <span className="animation"></span>
+      <span className="animation"></span>
+      <span className="animation"></span>
+      <span className="animation"></span>
+
+      {/* <div className="left">
         <div className="imgContainer">
           <img src="/assets/Image2.png" alt="Eduardo Perez" />
         </div>
-      </div>
+      </div> */}
       <div className="right">
         <div className="wrapper">
           <h2>Hola et bienvenue, je suis </h2>

@@ -1,19 +1,37 @@
-$mainColor: #0a3d62;
+$mainColor: #0e5266;
 
 $width:768px;
-$tablet-width: 769px;
-$desktop-width: 1366px; //1280
+$mobile:480px;
+$tablet: 768px;
+$desktop1-width: 1024;
+$desktop-width: 1540px; //1280
 
 // une façon diferent d'utilisation de media queries globalement. il faudra importer le fichier global dans les composants
 @mixin mobile {
-    @media(max-width: #{$width}){
+    @media(max-width: #{$mobile}){
         @content;
     }
     
 }
 
+// @mixin tablet {
+//   @media(max-width: #{$tablet}){
+//       @content;
+//   }
+  
+// }
+
+@mixin tablet {
+  @media(min-width: #{$mobile}) and (max-width: #{$tablet - 1px}){
+      @content;
+  }
+  
+}
+
+
+
 @mixin desktop {
-    @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+    @media (min-width: #{$tablet}) and (max-width: #{$desktop-width - 1px}) {
       @content;
     }
   }

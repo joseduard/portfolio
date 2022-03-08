@@ -22,7 +22,7 @@
   position: absolute;
   top: 50px;
   left: 50px;
-  background-color: #333;
+  background-color: #0e5266;
 }
 
 .a-card {
@@ -44,25 +44,26 @@
   margin-right: 5rem;
 }
 .a-title {
-  font-weight: 500;
+  font-weight: 700;
 }
 .a-desc {
-  font-size: 17px;
-  font-weight: 400;
+  font-size: 20px;
+  font-weight: 700;
   margin-top: 10px;
   letter-spacing: 2px;
 }
 .a-motivation-title {
   font-size: 20px;
-  font-weight: 600;
-  color: #555;
+  font-weight: 700;
+  color: #0e5266;
   margin: 20px 0;
 }
 
 .a-sub {
   margin: 10px 0px;
-  font-weight: 500;
-  font-size: 17px;
+  font-weight: 600;
+  color: #0e5266;
+  font-size: 20px;
   letter-spacing: 2px;
 }
 
@@ -80,7 +81,7 @@
 
   .a-desc {
     font-size: 17px;
-    font-weight: 400;
+    font-weight: 600;
     margin-top: 10px;
     letter-spacing: 2px;
   }
@@ -100,13 +101,23 @@
 }
 
 @media screen and (min-width: 769px) and (max-width: 1366px) {
+  .a-title{
+
+    font-size: 26px;
+  }
   .a-desc {
-    font-size: 15px;
-    font-weight: 400;
+    font-size: 14px;
+    font-weight: 600;
     margin-top: 10px;
     letter-spacing: 2px;
   }
   .a-sub {
-    font-size: 15px;
+    font-size: 14px;
+  }
+
+  .a-card {
+    width: 55%;
+  height: 60vh;
+
   }
 }

@@ -11,7 +11,7 @@
         position: absolute;
         cursor: pointer;
 
-        @include mobile {
+        @include tablet {
             display: none;
         }
 
@@ -32,7 +32,7 @@
         left: 0;
         transition: all 1s ease;
 
-        @include mobile {
+        @include tablet {
             height: 100vh;
             flex-direction: column;
             justify-content: center;
@@ -52,7 +52,7 @@
                 align-items: center;
                 justify-content: center;
 
-                @include mobile {
+                @include tablet {
                     width: 80%;
                     height: 150px;
                     margin: 15px 0;
@@ -80,7 +80,7 @@
                             display: flex;
                             justify-content: center;
 
-                            @include mobile {
+                            @include tablet {
                                 width: 20px;
                                 height: 20px;
                             }
@@ -89,7 +89,7 @@
                                 width: 30px;
                                 border-radius: 50%;
 
-                                @include mobile {
+                                @include tablet {
                                     width: 15px;
                                 }
                             }
@@ -98,7 +98,7 @@
                         h2 {
                             font-size: 33px;
 
-                            @include mobile {
+                            @include tablet {
                                 font-size: 13px;
                             }
                         }
@@ -106,7 +106,7 @@
                             font-size: 20px;
                             font-weight: 500;
                             word-spacing: 3.4px;
-                            @include mobile {
+                            @include tablet {
                                 font-size: 10px;
                             }
                         }

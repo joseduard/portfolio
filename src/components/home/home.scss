@@ -1,90 +1,87 @@
 @import "../../global.scss";
 
 .home {
-    background-color: white;
     display: flex;
+    justify-content: center;
+    width: 100vw;
+    background: #112437;
 
-    @include mobile {
+    @include tablet {
         flex-direction: column;
         align-items: center;
     }
 
-    .left {
-        flex: 0.5;
-        overflow: hidden;
-
-        .imgContainer {
-            width: 700px;
-            height: 700px;
-            background-color: #60a3bc;
-            border-radius: 5% 30% 50% 70%;
-            display: flex;
-            align-items: baseline;
-            justify-content: center;
-            float: right;
-            overflow: hidden;
-
-            @include mobile {
-                width: 350px; //500px
-                height: 350px; //500px
-                align-items: flex-start;
-            }
-
-            @include desktop {
-                width: 500px; //500px
-                height: 500px; //500px
-                align-items: flex-start;
-            }
-
-            img {
-                width: 90%;
-                @include mobile {
-                    width: 70%;
-                }
-            }
-        }
-    }
     .right {
-        flex: 0.5;
+        width: 75em;
         position: relative;
 
         .wrapper {
             width: 100%;
             height: 100%;
-            padding-left: 50px;
             display: flex;
             flex-direction: column;
             justify-content: center;
+            align-items: center;
+            color: white;
+            font-variant: small-caps;
+            letter-spacing: 0.5em;
+            text-shadow: 0 0 17px #000;
+            white-space: pre;
+            text-shadow: 0 0 5px #000;
 
             @include mobile {
+                padding-left: 0;
+                align-items: center;
+                letter-spacing: 0.1em;
+            }
+
+            @include tablet {
                 padding-left: 0;
                 align-items: center;
             }
 
             h1 {
                 font-size: 60px;
-                margin: 10px 0;
+                margin: 1rem 0;
 
                 @include mobile {
-                    font-size: 40px;
+                    font-size: 35px;
+                }
+
+                @include tablet {
+                    font-size: 37px;
+                    margin-bottom: 2rem;
                 }
             }
 
             h2 {
-                font-size: 35px;
+                font-size: 50px;
+                margin-bottom: 1rem;
+
                 @include mobile {
-                    font-size: 27px;
+                    font-size: 22px;
+                }
+
+                @include tablet {
+                    font-size: 22px;
                 }
             }
 
             h3 {
-                font-size: 30px;
+                font-size: 4.5rem;
+
                 @include mobile {
-                    font-size: 23px;
+                    font-size: 1.3rem;
+                }
+
+                @include tablet {
+                    font-size: 1.2rem;
+                    margin-bottom: 13rem;
                 }
                 span {
                     font-size: inherit;
-                    color: #78e08f;
+                    color: white;
+                    font-weight: 900;
                 }
 
                 .ityped-cursor {
@@ -105,17 +102,32 @@
         a {
             position: absolute;
             bottom: 25px;
-            left: 40%;
+            left: 48%;
 
             @include mobile {
+                position: absolute;
+                bottom: 15%;
+                left: 40%;
+            }
+
+            @include tablet {
                 position: absolute;
                 bottom: 0px;
             }
 
             img {
-                width: 50px;
+                width: 90px;
                 animation: arrowBlink 2s infinite;
                 font-weight: bold;
+                filter: invert(100%);
+
+                @include mobile {
+                    width: 60px;
+                }
+                
+                @include tablet {
+                    width: 70px;
+                }
             }
 
             @keyframes arrowBlink {
@@ -124,5 +136,40 @@
                 }
             }
         }
+    }
+}
+
+$particleSize: 20vmin;
+$animationDuration: 6s;
+$amount: 20;
+.animation {
+    width: $particleSize;
+    height: $particleSize;
+    border-radius: $particleSize;
+    backface-visibility: hidden;
+    position: absolute;
+    animation-name: move;
+    animation-duration: $animationDuration;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    $colors: (#583c87, #185f3b, #e45a84, #0e5266, #9fbe6a);
+    @for $i from 1 through $amount {
+        &:nth-child(#{$i}) {
+            color: nth($colors, random(length($colors)));
+            top: random(100) * 1%;
+            left: random(100) * 1%;
+            animation-duration: (random($animationDuration * 10) / 10) * 1s + 10s;
+            animation-delay: random(($animationDuration + 10s) * 10) / 10 * -1s;
+            transform-origin: (random(50) - 25) * 1vw (random(50) - 25) * 1vh;
+            $blurRadius: (random() + 0.5) * $particleSize * 0.5;
+            $x: if(random() > 0.5, -1, 1);
+            box-shadow: ($particleSize * 2 * $x) 0 $blurRadius currentColor;
+        }
+    }
+}
+
+@keyframes move {
+    100% {
+        transform: translate3d(0, 0, 0.5px) rotate(360deg);
     }
 }
