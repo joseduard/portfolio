@@ -111,7 +111,7 @@
   }
 
   .a-left {
-    width: 100%;
+    width: 80%;
   }
   .a-title {
     display: none;
@@ -149,10 +149,15 @@
   .a-sub {
     font-size: 14px;
   }
-
+  .a-card.bg {
+    position: absolute;
+    top: 115px;
+    left: 15px;
+    background-color: #0e5266;
+}
   .a-card {
-    width: 55%;
-  height: 60vh;
+    width: 80%;
+  height: 45vh;
 
   }
 }

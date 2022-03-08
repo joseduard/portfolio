@@ -40,6 +40,11 @@
                 align-items: center;
             }
 
+            @include desktop {
+                padding-left: 0;
+                align-items: center;
+            }
+
             h1 {
                 font-size: 60px;
                 margin: 1rem 0;
@@ -50,6 +55,11 @@
 
                 @include tablet {
                     font-size: 37px;
+                    margin-bottom: 2rem;
+                }
+
+                @include desktop {
+                    font-size: 40px;
                     margin-bottom: 2rem;
                 }
             }
@@ -65,6 +75,10 @@
                 @include tablet {
                     font-size: 22px;
                 }
+
+                @include desktop {
+                    font-size: 32px;
+                }
             }
 
             h3 {
@@ -76,6 +90,11 @@
 
                 @include tablet {
                     font-size: 1.2rem;
+                    margin-bottom: 13rem;
+                }
+
+                @include desktop {
+                    font-size: 2.2rem;
                     margin-bottom: 13rem;
                 }
                 span {
@@ -113,6 +132,11 @@
             @include tablet {
                 position: absolute;
                 bottom: 0px;
+            }
+            @include desktop {
+                position: absolute;
+                bottom: 48px;
+                left: 46%;
             }
 
             img {

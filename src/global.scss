@@ -3,7 +3,7 @@ $mainColor: #0e5266;
 $width:768px;
 $mobile:480px;
 $tablet: 768px;
-$desktop1-width: 1024;
+$desktop: 1024;
 $desktop-width: 1540px; //1280
 
 // une façon diferent d'utilisation de media queries globalement. il faudra importer le fichier global dans les composants
@@ -22,7 +22,7 @@ $desktop-width: 1540px; //1280
 // }
 
 @mixin tablet {
-  @media(min-width: #{$mobile}) and (max-width: #{$tablet }){
+  @media(min-width: #{$mobile}) and (max-width: #{$tablet}){
       @content;
   }
   
@@ -31,7 +31,7 @@ $desktop-width: 1540px; //1280
 
 
 @mixin desktop {
-    @media (min-width: #{$tablet}) and (max-width: #{$desktop-width - 1px}) {
+    @media (min-width: #{$tablet}) and (max-width: #{$desktop - 1px}) {
       @content;
     }
   }

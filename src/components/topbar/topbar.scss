@@ -39,11 +39,16 @@
                 align-items: flex-start;
                 margin: 10px;
             }
+
+            @include desktop {
+                display: flex;
+                align-items: center;
+            }
             .logo {
                 font-size: 45px;
                 font-weight: 700;
                 text-decoration: none;
-                color: inherit;
+                color: $mainColor;
 
                 @include mobile {
                     display: none;
@@ -51,6 +56,11 @@
 
                 @include tablet {
                     display: none;
+                }
+
+                @include desktop {
+                    font-size: 35px;
+                   
                 }
             }
 
@@ -83,6 +93,9 @@
                     }
                     @include tablet {
                         font-size: 18px;
+                    }
+                    @include desktop {
+                        font-size: 17px;
                     }
                 }
             }
@@ -124,6 +137,8 @@
         background-color: $mainColor;
         color: white;
 
+        
+
         .hamburger {
             span {
                 &:first-child {
@@ -142,5 +157,9 @@
                 }
             }
         }
+        &.active .logo {
+            color: white;
+        }
     }
+   
 }
