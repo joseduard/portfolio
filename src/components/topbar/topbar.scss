@@ -11,7 +11,7 @@
     transition: all 1s ease;
 
     .wrapper {
-        padding: 10px 30px;
+        padding: 5px 30px;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -22,6 +22,9 @@
 
         @include tablet {
             padding: 0px;
+        }
+        @include laptop {
+            padding: 5px 30px;
         }
 
         .left {
