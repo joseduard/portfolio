@@ -5,11 +5,17 @@
     align-items: center;
     justify-content: center;
     position: relative;
+    overflow-y: hidden;
+
 
     .arrow {
         height: 50px;
         position: absolute;
         cursor: pointer;
+
+        @include mobile {
+            display: none;
+        }
 
         @include tablet {
             display: none;
@@ -32,6 +38,12 @@
         left: 0;
         transition: all 1s ease;
 
+        @include mobile {
+            height: 88vh;
+            flex-direction: column;
+            justify-content: center;
+        }
+
         @include tablet {
             height: 100vh;
             flex-direction: column;
@@ -43,6 +55,10 @@
             align-items: center;
             justify-content: center;
 
+            @include mobile {
+                overflow: hidden;
+            }
+
             .item {
                 width: 700px;
                 height: 100%;
@@ -51,6 +67,14 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
+
+                @include mobile {
+                    width: 80%;
+                    height: 89%;
+                    display: flex;
+                    flex-direction: column-reverse;
+                    margin-bottom: 29px;
+                }
 
                 @include tablet {
                     width: 80%;
@@ -72,6 +96,14 @@
                         flex-direction: column;
                         justify-content: space-between;
 
+                        @include mobile {
+                            width: 65%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            flex-direction: column;
+                        }
+
                         .imgContainer {
                             width: 40px;
                             height: 40px;
@@ -79,6 +111,10 @@
                             background-color: $mainColor;
                             display: flex;
                             justify-content: center;
+
+                            @include mobile {
+                                display: none;
+                            }
 
                             @include tablet {
                                 width: 20px;
@@ -98,14 +134,21 @@
                         h2 {
                             font-size: 33px;
 
+                            @include mobile {
+                                font-size: 12px;
+                            }
                             @include tablet {
                                 font-size: 13px;
                             }
                         }
                         p {
                             font-size: 20px;
-                            font-weight: 500;
+                            font-weight: 700;
                             word-spacing: 3.4px;
+
+                            @include mobile {
+                                font-size: 10px;
+                            }
                             @include tablet {
                                 font-size: 10px;
                             }
@@ -123,10 +166,18 @@
                     align-items: center;
                     justify-content: center;
                     overflow: hidden;
+
+                    @include mobile {
+                        flex:3 1;
+                    }
                     img {
                         width: 400px;
                         transform: rotate(-10deg);
                         font-weight: bold;
+
+                        @include mobile {
+                            width: 62%;
+                        }
                     }
                 }
             }
