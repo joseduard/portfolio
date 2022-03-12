@@ -38,7 +38,7 @@
   display: flex;
   align-items: center;
   margin: 50px 0px;
-  font-weight: 300;
+  font-weight: 700;
   width: 70%;
 }
 .c-icon {
@@ -130,6 +130,37 @@ button:hover {
   button {
     margin-top: 10px;
   }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+
+.c-title {
+  font-size: 25px;
+}
+
+.c-info-item {
+  width: 100%;
+  font-size: 13px;
+}
+.c-icon {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+}
+
+button {
+  padding: 10px;
+}
+
+.c-desc {
+  font-size: 16px;
+}
+input {
+  height: 30px;
+}
+textarea {
+  width: 95%;
+}
 }
 
 @media screen and (min-width: 769px) and (max-width: 1366px) {
