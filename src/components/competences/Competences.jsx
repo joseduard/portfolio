@@ -40,7 +40,7 @@ export default function Competences() {
       >
         {data.map((d) => (
           <div className="container">
-            <div className="item">
+            <div className="item" id="animation">
               <div className="left">
                 <div className="leftContainer">
                   <div className="imgContainer">
