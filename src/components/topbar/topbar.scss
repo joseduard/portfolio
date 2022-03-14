@@ -63,7 +63,6 @@
 
                 @include desktop {
                     font-size: 35px;
-                   
                 }
             }
 
@@ -78,7 +77,6 @@
                 }
 
                 @include tablet {
-                    
                     margin-left: 2px;
                 }
 
@@ -119,9 +117,7 @@
                     margin-right: 14px;
                 }
 
-                
                 @include tablet {
-                    
                     margin-right: 14px;
                 }
 
@@ -139,8 +135,6 @@
     &.active {
         background-color: $mainColor;
         color: white;
-
-        
 
         .hamburger {
             span {
@@ -164,5 +158,4 @@
             color: white;
         }
     }
-   
 }

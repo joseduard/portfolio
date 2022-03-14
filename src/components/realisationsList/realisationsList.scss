@@ -1,24 +1,24 @@
 @import "../../global.scss";
 
-li{
+li {
     font-size: 20px;
     margin-right: 50px;
     padding: 7px;
-    border-radius:10px ;
+    border-radius: 10px;
     cursor: pointer;
 
     @include mobile {
         font-size: 15px;
-    margin-right: 19px;
-    padding: 3px;
+        margin-right: 19px;
+        padding: 3px;
     }
 
-    @include tablet{
+    @include tablet {
         margin-right: 20px;
-      }
+    }
 
-    &.active{
-        background-color:$mainColor;
+    &.active {
+        background-color: $mainColor;
         color: white;
     }
 }

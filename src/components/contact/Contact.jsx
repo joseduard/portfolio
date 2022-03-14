@@ -9,7 +9,7 @@ export default function Contact() {
   const [done, setDone] = useState(false);
 
   const handleSubmit = (e) => {
-    // Ici on va empecher que la page se recharge chaqu fois qu'on tape sur le botton submit avec la fucntion prevent Default
+    // Ici on va empecher que la page se recharge chaque fois qu'on tape sur le botton submit avec la fucntion prevent Default
     e.preventDefault();
     // Pour envoyer donnes vers une adress mail on va utiliser EmailJS (email software provider) on recupere un id et un template qu'on est creé chez emailjs
     // ce morceau du cpde a etais pris du la documentation de emailjs pour react

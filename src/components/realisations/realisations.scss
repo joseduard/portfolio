@@ -1,8 +1,22 @@
- @import "../../global.scss";
+@import "../../global.scss";
 
 .realisations {
   background-color: white;
-  background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+  background-image: linear-gradient(
+    to right top,
+    #d16ba5,
+    #c777b9,
+    #ba83ca,
+    #aa8fd8,
+    #9a9ae1,
+    #8aa7ec,
+    #79b3f4,
+    #69bff8,
+    #52cffe,
+    #41dfff,
+    #46eefa,
+    #5ffbf1
+  );
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -12,7 +26,7 @@
 
     @include mobile {
       font-size: 23px;
-    overflow: hidden;
+      overflow: hidden;
     }
 
     @include tablet {
@@ -21,7 +35,7 @@
     }
     @include desktop {
       font-size: 23px;
-    overflow: hidden;
+      overflow: hidden;
     }
     @include laptop {
       font-size: 45px;
@@ -48,8 +62,6 @@
       justify-content: center;
       overflow: hidden;
     }
-
-   
   }
 
   .container {
@@ -59,7 +71,7 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    @include mobile{
+    @include mobile {
       width: 95%;
     }
     @include tablet {
@@ -70,7 +82,7 @@
       width: 100%;
       margin-top: 1rem;
     }
-    @include laptop{
+    @include laptop {
       width: 93%;
       margin-top: 1rem;
     }
@@ -99,8 +111,6 @@
         margin: 5px 5px;
       }
 
-      
-
       @include desktop {
         width: 280px;
         height: 180px;
@@ -113,7 +123,7 @@
         padding: 0px;
         margin: 10px 10px;
       }
-     
+
       a {
         color: white;
         outline: none;
@@ -253,7 +263,6 @@
 
         @include tablet {
           font-size: 9px;
-          
         }
         @include desktop {
           bottom: 8px;

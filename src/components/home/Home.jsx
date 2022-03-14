@@ -14,9 +14,8 @@ export default function Home() {
       backSpeed: 60,
       strings: ["JavaScript", "React.js", "Redux", "Node.js", "Sass", "SQL"],
     });
-    
-      /*morceau du code pour utiliser ityped - npm */
-    
+
+    /*morceau du code pour utiliser ityped - npm */
   }, []);
   return (
     <div className="home" id="home">
