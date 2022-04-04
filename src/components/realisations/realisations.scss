@@ -25,16 +25,19 @@
     font-size: 50px;
 
     @include mobile {
-      font-size: 23px;
+      font-size: 38px;
       overflow: hidden;
+      padding-bottom: 10px;
     }
 
     @include tablet {
-      font-size: 20px;
+      font-size: 35px;
       overflow: hidden;
+
+      padding-top: 30px;
     }
     @include desktop {
-      font-size: 23px;
+      font-size: 35px;
       overflow: hidden;
     }
     @include laptop {
@@ -57,10 +60,14 @@
     }
 
     @include tablet {
-      margin: 10px 0;
       flex-wrap: wrap;
       justify-content: center;
       overflow: hidden;
+      padding: 10px;
+      margin: 0px;
+    }
+    @include desktop {
+      margin: 5px;
     }
   }
 
@@ -101,12 +108,12 @@
       transition: all 0.5s ease;
 
       @include mobile {
-        height: 180px;
+        height: 167px;
       }
 
       @include tablet {
         width: 240px;
-        height: 234px;
+        height: 153px;
         padding: 0px;
         margin: 5px 5px;
       }
@@ -159,7 +166,7 @@
           background-color: #d16ba5;
           border-radius: 5px;
           padding: 4px;
-          letter-spacing: 3px;
+          letter-spacing: 1.5px;
           animation: myAnim 2s ease 0s 1 normal forwards;
         }
         @keyframes myAnim {
@@ -209,6 +216,7 @@
         @include mobile {
           font-size: 10px;
           padding: 7px;
+          top: 42px;
         }
         @include tablet {
           font-size: 12px;
@@ -217,7 +225,7 @@
         }
         @include desktop {
           position: absolute;
-          top: 30px;
+          top: 37px;
           font-size: 13px;
           padding: 10px;
         }
@@ -239,17 +247,17 @@
 
         @include tablet {
           padding: 0;
-          font-size: 9px;
+          font-size: 12px;
           position: absolute;
-          bottom: 39px;
+          bottom: 30px;
         }
         @include desktop {
           bottom: 29px;
-          font-size: 10px;
+          font-size: 13px;
         }
         @include laptop {
           font-size: 12px;
-          bottom: 28px;
+          bottom: 46px;
         }
       }
 
@@ -262,25 +270,24 @@
         padding: 0px 10px 0px 10px;
 
         @include tablet {
-          font-size: 9px;
+          bottom: 13px;
         }
         @include desktop {
-          bottom: 8px;
-
+          bottom: 10px;
           font-size: 10px;
           font-weight: 900;
         }
       }
 
       .enlace:hover {
-        font-size: 12px;
+        // font-size: 12px;
         border-bottom: 1px solid;
         position: absolute;
-        bottom: 10px;
-        right: 2rem;
-        padding: 4px;
-        letter-spacing: 1px;
-        animation: myAnim 2s ease 0s 1 normal forwards;
+        // bottom: 10px;
+        // right: 2rem;
+        // padding: 4px;
+        // letter-spacing: 0.2px;
+        animation: myAnim 1s ease 0s 1 normal forwards;
       }
 
       &:hover {

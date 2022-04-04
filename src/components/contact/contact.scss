@@ -14,8 +14,9 @@
 }
 
 .c-wrapper {
-  padding: 50px;
+  padding: 10px;
   display: flex;
+  margin: 16px;
 }
 .c-left {
   flex: 1;
@@ -30,7 +31,7 @@
 }
 
 .c-title {
-  font-size: 60px;
+  font-size: 55px;
   width: 80%;
 }
 
@@ -59,11 +60,11 @@
 
 .c-desc {
   font-weight: 200;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 form {
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 input {
@@ -102,14 +103,19 @@ button:hover {
   }
 
   .c-title {
-    font-size: 30px;
+    font-size: 20px;
   }
 
   .c-info-item {
     margin: 20px 0px;
     width: 100%;
+    font-size: 10px;
   }
-
+  .c-icon {
+    width: 15px;
+    height: 15px;
+    margin-right: 20px;
+  }
   .c-desc {
     display: none;
   }
@@ -121,14 +127,17 @@ button:hover {
   }
 
   input {
-    width: 35%;
-    height: 40px;
+    width: 80%;
+    height: 15px;
     margin: 10px;
     margin-left: 0;
   }
 
   button {
     margin-top: 10px;
+  }
+  textarea {
+    font-size: 9px;
   }
 }
 

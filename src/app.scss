@@ -4,7 +4,6 @@
     .sections {
         width: 100%;
         height: calc(100vh - 70px);
-        // background-color: lightsalmon;
         position: relative;
         top: 70px;
         scroll-behavior: smooth;
@@ -17,7 +16,8 @@
         > * {
             // width: 100vw;
             height: calc(100vh - 70px);
-            scroll-snap-align: start;
+            // scroll-snap-align: start;
+            // cette propriété definit la position de la boîte d'accroche et le conteneur, elle est desactive car genere un bug à cause des animations.
         }
     }
 
